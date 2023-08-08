@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backquiz"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result Time"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#CF3636"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="371dp"
+        android:layout_height="272dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#2706BC"/>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#641681"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#CDE4EF"
+        android:padding="20dp"
+        android:text="Restart"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Exit"
+        android:backgroundTint="#CDE4EF"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:onClick="onExitButtonClick" />
+
+</LinearLayout>
